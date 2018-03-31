@@ -3,7 +3,7 @@
   #set column separator to ";"
   #set header
   #assign "?" for NA values
-  #converting date values
+  #format for date
 
 data<-read.table("household_power_consumption.txt",sep=";",header=TRUE,na.strings="?")
 data$Date<-as.Date(data$Date, format = "%d/%m/%Y")
